@@ -10,6 +10,6 @@ else
 		exit 1
 	fi
 fi
-num_of_files=($(find $1 -type f | wc -l))
-num_of_matches=($(grep -r $2 $1* | wc -l))
+num_of_files=$(find $1 -type f | wc -l)
+num_of_matches=$(grep -r $2 $1* | wc -l)
 echo "The number of files are $num_of_files and the number of matching lines are $num_of_matches"
